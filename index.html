@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body class="background" style="width: 100vw">
+    <div class="d-flex flex-column">
+        <div class="inlineform shadowcard">
+            <div class="card">
+                <div class="card-body">
+                    <form class="needs-validation " novalidate>
+                        <h4>Inline form</h4>
+                        <div class="row inlineform">
+                            <div class="col-md-3 mb-3">
+                                <input placeholder="Email" type="email" class="form-control" id="validationCustom01"
+                                    value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <input placeholder="Password" type="password" class="form-control"
+                                    id="validationCustom02" value="" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Remember Me
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-primary" type="button" onclick="submitForm1()">Confirn
+                                    identity</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row">
+            <div class="BlockStyledform">
+                <div class="container shadowcard mt-2 m-0 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="needs-validation" novalidate>
+                                <h4>Block Styled form</h4>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom01" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="validationCustom001" value=""
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom02" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="validationCustom002" value=""
+                                            required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom02" class="form-label">Address</label>
+                                        <textarea rows="3" class="form-control" id="validationCustom002" value=""
+                                            required></textarea>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom02" class="form-label">Address</label>
+                                        <textarea rows="3" class="form-control" id="validationCustom002" value=""
+                                            required></textarea>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="validationCustom003" value=""
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom04" class="form-label">State</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Choose...</option>
+                                            <option>Andhra Pradesh</option>
+                                            <option>Arunachal Pradesh</option>
+                                            <option>Assam</option>
+                                            <option>Bihar</option>
+                                            <option>Chhattisgarh</option>
+                                            <option>Goa</option>
+                                            <option>Gujarat</option>
+                                            <option>Haryana</option>
+                                            <option>Himachal Pradesh</option>
+                                            <option>Jharkhand</option>
+                                            <option>Karnataka</option>
+                                            <option>Kerala</option>
+                                            <option>Madhya Pradesh</option>
+                                            <option>Maharashtra</option>
+                                            <option>Manipur</option>
+                                            <option>Meghalaya</option>
+                                            <option>Mizoram</option>
+                                            <option>Nagaland</option>
+                                            <option>Odisha</option>
+                                            <option>Punjab</option>
+                                            <option>Rajasthan</option>
+                                            <option>Sikkim</option>
+                                            <option>Tamil Nadu</option>
+                                            <option>Telangana</option>
+                                            <option>Tripura</option>
+                                            <option>Uttar Pradesh</option>
+                                            <option>Uttarakhand</option>
+                                            <option>West Bengal</option>
+                                        </select>
+
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="validationCustom05" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" value="" id="validationCustom005"
+                                            required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 checkmeout">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Check me out
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary" type="button" onclick="submitForm2()">Sign
+                                            in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Horizontalform"    >
+                <div class="container shadowcard mt-2 m-0 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="needs-validation" novalidate>
+                                <h4>Horizontal form</h4>
+                                <div class="row">
+                                    <div class="d-flex flex-row mb-3">
+                                        <div class="col-md-2">
+                                            <label for="validationCustom01" class=" form-label">Email</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input type="email" class=" col-md-8 form-control" id="validationCustom0001"
+                                                value="" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row mb-3">
+                                        <div class="col-md-2">
+                                            <label for="validationCustom02" class="form-label">Password</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input type="password" class="form-control" id="validationCustom0002"
+                                                value="" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row mb-3">
+                                        <div class="col-md-2">
+                                            <label for="validationCustom02" class="form-label">Address</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea rows="3" class="form-control" id="validationCustom0003" value=""
+                                                required></textarea>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>FF
+                                    </div>
+                                    <div class="d-flex flex-row mb-3">
+                                        <div class="col-md-2">
+                                            <label for="validationCustom02" class="form-label">Address</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <textarea rows="3" class="form-control" id="validationCustom0004" value=""
+                                                required></textarea>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row mb-3">
+                                        <div class="col-md-2">
+                                            <label for="validationCustom03" class="form-label">City</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input type="text" value="" class="form-control" id="validationCustom0005"
+                                                required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid city.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                                required>
+                                            <label class="form-check-label" for="invalidCheck">
+                                                Agree to terms and conditions
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree before submitting.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary" type="button" onclick="submitForm3()">Remember
+                                            me</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            'use strict';
+            var forms = document.querySelectorAll('.needs-validation');
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        })();
+        function submitForm1() {
+            var form = document.querySelector('.inlineform form');
+            if (form.checkValidity()) {
+                // Form is valid, perform your desired action here
+                Swal.fire(
+                    'Good job!',
+                    'Inline form submitted successfully',
+                    'success'
+                )
+                console.log('Inline form submitted successfully!');
+            } else {
+                // Form is invalid, you can display an error message or perform any other action
+                console.log('Form 1 is invalid!');
+            }
+            // Prevent form from actually submitting and refreshing the page
+            event.preventDefault();
+            event.stopPropagation();
+            form.classList.add('was-validated');
+        }
+        function submitForm2() {
+            var form = document.querySelector('.BlockStyledform form');
+            if (form.checkValidity()) {
+                // Form is valid, perform your desired action here
+                Swal.fire(
+                    'Good job!',
+                    'Block Styled form submitted successfully',
+                    'success'
+                )
+                console.log('Block Styled form submitted successfully!');
+            } else {
+                // Form is invalid, you can display an error message or perform any other action
+                console.log('Block Styled form is invalid!');
+            }
+            // Prevent form from actually submitting and refreshing the page
+            event.preventDefault();
+            event.stopPropagation();
+            form.classList.add('was-validated');
+        }
+        function submitForm3() {
+            var form = document.querySelector('.Horizontalform form');
+            if (form.checkValidity()) {
+                // Form is valid, perform your desired action here
+                Swal.fire(
+                    'Good job!',
+                    'Horizontal form submitted successfully',
+                    'success'
+                )
+                console.log('Horizontal form submitted successfully!');
+            } else {
+                // Form is invalid, you can display an error message or perform any other action
+                console.log('Horizontal form is invalid!');
+            }
+            // Prevent form from actually submitting and refreshing the page
+            event.preventDefault();
+            event.stopPropagation();
+            form.classList.add('was-validated');
+        }
+
+
+
+
+
+    </script>
+    <style>
+        .background {
+            background-color: rgb(241, 241, 241);
+        }
+
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .inlineform {
+            margin: 10px;
+        }
+
+        .Rememberme {
+            margin-top: 10px;
+        }
+
+        .checkmeout {
+            margin-top: 10px;
+        }
+
+        .btn-primary {
+            background-color: rgb(0, 0, 101);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            position: relative;
+        }
+
+
+        /* Media queries for small screens */
+        @media (max-width: 767px) {
+            .col-md-4.Rememberme {
+                margin-top: 10px;
+            }
+
+            .checkmeout {
+                margin-top: 10px;
+            }
+        }
+
+        /* Media queries for medium screens */
+        @media (min-width: 768px) and (max-width: 991px) {
+            .col-md-4.Rememberme {
+                margin-top: 40px;
+            }
+        }
+
+        /* Media queries for large screens */
+        @media (min-width: 992px) {
+            .inlineform {
+                margin: 10px;
+            }
+
+            .Rememberme {
+                margin-top: 40px;
+            }
+
+            .checkmeout {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</body>
+
+</html>
